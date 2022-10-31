@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use  App\Http\Controllers\InicioController;
+use  App\Http\Controllers\PruebaController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',   InicioController::class   );
+
+
+Route::get('prueba',[PruebaController::class, 'p']);
+Route::get('prueba/prueba1',[PruebaController::class, 'p1']);
+Route::get('prueba/prueba2',[PruebaController::class, 'p2']);
+
