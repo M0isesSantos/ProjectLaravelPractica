@@ -18,10 +18,11 @@ use  App\Http\Controllers\PruebaController;
 Route::get('/',   InicioController::class   );
 
 
+
 Route::controller(PruebaController::class)->group(function () {
-    Route::get('pruebas','p');
-    Route::get('pruebas/prueba1', 'p1');
-    Route::get('prueba/prueba2','p2');
+    Route::get('pruebas','index');
+    Route::get('pruebas/create', 'create');
+    Route::get('pruebas/{prueba}','show');
 });
 
 
