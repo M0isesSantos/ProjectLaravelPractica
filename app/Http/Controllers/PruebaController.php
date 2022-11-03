@@ -6,16 +6,19 @@ use Illuminate\Http\Request;
 
 class PruebaController extends Controller
 {
-    public function index(){
-        return 'Bienvenido es una pagina de Prueba ok';
+    public function p(){
+        //return 'Bienvenido a la pagina principal de prueba';
+        return view('pruebas.p');
     }
 
-    public function create(){
-        return 'Bienvenido es una pagina de Prueba1';
+    public function p1(){
+        //return 'Bienvenido es una pagina de Prueba1';
+        return view('pruebas.p1');
     }
 
 
-    public function show($prueba){
-        return "Bienvenido al curso $prueba";
+    public function p2($prueba){
+        //return "Bienvenido al curso $prueba";
+        return view('pruebas.p2,');
     }
 }

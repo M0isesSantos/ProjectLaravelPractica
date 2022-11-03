@@ -15,16 +15,23 @@ use  App\Http\Controllers\PruebaController;
 |
 */
 
-Route::get('/',   InicioController::class   );
+Route::get('/',   InicioController::class);
 
 
 
 Route::controller(PruebaController::class)->group(function () {
-    Route::get('pruebas','index');
-    Route::get('pruebas/create', 'create');
-    Route::get('pruebas/{prueba}','show');
+    
+    Route::get('pruebas','p');  
+    Route::get('pruebas/prueba1', 'p1');    
+    Route::get('pruebas/{prueba2}','p2');
+
 });
 
 
 
+/*  
+    Route::get('pruebas', [PruebaController::class, 'p']);
+    Route::get('pruebas/prueba1', [PruebaController::class, 'p1']);
+    Route::get('pruebas/prueba2', [PruebaController::class, 'p2']);
 
+*/

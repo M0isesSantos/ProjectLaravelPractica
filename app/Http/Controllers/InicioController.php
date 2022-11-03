@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class InicioController extends Controller
 {
     public function __invoke(){
-        return "Esta es mi primera pagina Web";
+        //return "Bienvenido al pagina principal - Practica";
+        return view('inicio.blade');
     }
 }
