@@ -9,6 +9,6 @@ class InicioController extends Controller
 {
     public function __invoke(){
         //return "Bienvenido al pagina principal - Practica";
-        return view('inicio.blade');
+        return view('inicio');
     }
 }

@@ -22,7 +22,8 @@ Route::get('/',   InicioController::class);
 Route::controller(PruebaController::class)->group(function () {
     
     Route::get('pruebas','p');  
-    Route::get('pruebas/prueba1', 'p1');    
+    Route::get('pruebas/prueba1', 'p1');  
+    Route::get('pruebas/create', 'create'); 
     Route::get('pruebas/{prueba2}','p2');
 
 });
